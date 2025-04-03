@@ -1,5 +1,5 @@
 Set WshShell = CreateObject("WScript.Shell")
-MsgBox ConvertToKey(WshShell.RegRead("HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId")),," Your Windows Key is..."
+MsgBox ConvertToKey(WshShell.RegRead("HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId")),,"Your Windows Key is..."
 
 Function ConvertToKey(Key)
 Const KeyOffset = 52
